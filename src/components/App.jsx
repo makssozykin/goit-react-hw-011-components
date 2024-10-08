@@ -1,7 +1,7 @@
 import user from '../data/user';
+import data from '../data/data';
 import { Profile } from './Profile/Profile';
 import { Statistics } from './Statistics/Statistics';
-
 export const App = () => {
   return (
     <div>
@@ -14,7 +14,7 @@ export const App = () => {
         views={user.stats.views}
         likes={user.stats.likes}
       />
-      <Statistics />
+      <Statistics title="Upload stats" stats={data} />
     </div>
   );
 };
